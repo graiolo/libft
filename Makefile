@@ -71,17 +71,6 @@ CIANO = \033[0;96m
 all: $(NAME)
 
 $(NAME): $(OBG)
-	{
-	source progressbar.sh || exit 1
-
-	start=0
-	end=25
-	for ii in $(seq $start $end); do
-   	 sleep 0.01
-   	 progressbar "Loading" $ii $end
-	done
-	echo
-	}
 	@$(CC) $(SRC) 
 	@$(LIB) $(OBG)
 	@echo "$(GREEN)$(NAME) compilata con successo!$(DEF_COLOR)"
