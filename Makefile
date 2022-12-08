@@ -47,8 +47,7 @@ SRC = ft_isalpha.c\
 	ft_putchar_fd.c\
 	ft_putstr_fd.c\
 	ft_putendl_fd.c\
-	ft_putnbr_fd.c\
-	ft_uitoa.c
+	ft_putnbr_fd.c
 
 SRC_BONUS = ft_lstnew.c\
 			ft_lstadd_front.c\
@@ -64,23 +63,44 @@ OBG = $(SRC:.c=.o)
 
 OBG_BONUS = $(SRC_BONUS:.c=.o)
 
+DEF_COLOR = \033[0;39m
+GREEN = \033[0;92m
+RED = \033[0;91m
+CIANO = \033[0;96m
+
 all: $(NAME)
 
 $(NAME): $(OBG)
-	@$(CC) $(SRC)
-	@$(LIB) $(OBG) 
+	{
+	source progressbar.sh || exit 1
+
+	start=0
+	end=25
+	for ii in $(seq $start $end); do
+   	 sleep 0.01
+   	 progressbar "Loading" $ii $end
+	done
+	echo
+	}
+	@$(CC) $(SRC) 
+	@$(LIB) $(OBG)
+	@echo "$(GREEN)$(NAME) compilata con successo!$(DEF_COLOR)"
 
 clean:
 	@$(RM) $(OBG) $(OBG_BONUS)
+	@echo "$(CIANO)file .obj di $(NAME) eliminati con successo!$(DEF_COLOR)"
 
 fclean: clean
 	@$(RM) $(NAME)
+	@echo "$(RED)$(NAME) rimossa con successo!$(DEF_COLOR)"
 
 re: fclean all 
 
-bonus: $(OBG) $(OBG_BONUS)
-	@$(CC) $(SRC_BONUS)
+bonus: $(OBG_BONUS)
+	@$(CC) $(SRC) $(SRC_BONUS)
 	@$(LIB) $(NAME) $(OBG) $(OBG_BONUS)
+	@echo "$(GREEN)bonus $(NAME) compilata con successo!$(DEF_COLOR)"
 
 .PHONY: all clean fclean bonus
+.SILENT:
 
