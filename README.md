@@ -1,2 +1,8 @@
-# libft
-[![graiolo's 42 Libft Score](https://badge42.vercel.app/api/v2/clbifm27u00300fjr189qmc5z/project/2832220)](https://github.com/JaeSeoKim/badge42)
+# Libft
+## Status
+Finished: 2022-10-12. Grade: 125/100.
+
+## Usage
+``make`` to compile mandatory functions.
+
+``make bonus`` to compile with bonus functions.
