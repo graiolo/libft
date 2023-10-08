@@ -120,7 +120,7 @@ The libft project is a comprehensive C library that provides a wide range of com
 
 ## ⚙️ Modules
 
-<details closed><summary>Root</summary>
+<details open><summary>Root</summary>
 
 | File                                                                              | Summary                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ---                                                                               | ---                                                                                                                                                                                                                                                                                                                                                                                                                                                |
