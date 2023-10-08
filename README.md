@@ -24,8 +24,6 @@
 - [📂 Repository Structure](#-repository-structure)
 - [⚙️ Modules](#modules)
 - [🔧 Installation](#-installation)
-- [🛣 Roadmap](#-roadmap)
-- [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 - [👏 Acknowledgments](#-acknowledgments)
 
