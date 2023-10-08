@@ -24,6 +24,7 @@
 - [📂 Repository Structure](#-repository-structure)
 - [⚙️ Modules](#modules)
 - [🔧 Installation](#-installation)
+    - [🧪 Tests](#-tests)
 - [📄 License](#-license)
 - [👏 Acknowledgments](#-acknowledgments)
 
@@ -193,6 +194,13 @@ git clone https://github.com/graiolo/libft
 cd libft
 ```
 ---
+
+### 🧪 Tests
+```sh
+[/* No common unit test framework in C */](https://github.com/Tripouille/libftTester)
+```
+
+
 
 ## 📄 License
 
