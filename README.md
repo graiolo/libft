@@ -25,9 +25,6 @@
 - [⚙️ Modules](#modules)
 - [🔧 Installation](#-installation)
     - [🧪 Tests](#-tests)
-- [📄 License](#-license)
-- [👏 Acknowledgments](#-acknowledgments)
-
 ---
 
 
@@ -198,17 +195,6 @@ cd libft
 ### 🧪 Tests
 
 [https://github.com/xicodomingues/francinette](https://github.com/xicodomingues/francinette)
-
-
-## 📄 License
-
-This project is licensed under the `ℹ️  LICENSE-TYPE` License. See the [LICENSE-Type](LICENSE) file for additional info.
-
----
-
-## 👏 Acknowledgments
-
-`- ℹ️ List any resources, contributors, inspiration, etc.`
 
 [↑ Return](#Top)
 
