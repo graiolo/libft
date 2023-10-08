@@ -197,7 +197,7 @@ cd libft
 
 ### 🧪 Tests
 ```sh
-[/* No common unit test framework in C */](https://github.com/Tripouille/libftTester)
+https://github.com/xicodomingues/francinette
 ```
 
 
