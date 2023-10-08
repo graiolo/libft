@@ -196,10 +196,8 @@ cd libft
 ---
 
 ### 🧪 Tests
-```sh
-https://github.com/xicodomingues/francinette
-```
 
+https://github.com/xicodomingues/francinette
 
 
 ## 📄 License
