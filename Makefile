@@ -6,7 +6,7 @@ CFLAG = -Wall -Werror -Wextra
 
 RM = rm -f
 
-LIB = ar rc $(NAME)
+LIB = ar rcs $(NAME)
 
 SRC = ft_isalpha.c\
 	ft_isdigit.c\
@@ -63,6 +63,9 @@ OBG = $(SRC:.c=.o)
 
 OBG_BONUS = $(SRC_BONUS:.c=.o)
 
+%.o:%.c
+	@$(CC) $< -o $@
+
 DEF_COLOR = \033[0;39m
 GREEN = \033[0;92m
 RED = \033[0;91m
@@ -71,7 +74,6 @@ CIANO = \033[0;96m
 all: $(NAME)
 
 $(NAME): $(OBG)
-	@$(CC) $(SRC) 
 	@$(LIB) $(OBG)
 	@echo "$(GREEN)$(NAME) compilata con successo!$(DEF_COLOR)"
 
@@ -85,11 +87,9 @@ fclean: clean
 
 re: fclean all 
 
-bonus: $(OBG_BONUS)
-	@$(CC) $(SRC) $(SRC_BONUS)
-	@$(LIB) $(NAME) $(OBG) $(OBG_BONUS)
+bonus: $(NAME) $(OBG_BONUS)
+	@$(LIB) $(OBG_BONUS)
 	@echo "$(GREEN)bonus $(NAME) compilata con successo!$(DEF_COLOR)"
 
 .PHONY: all clean fclean bonus
-.SILENT:
 
